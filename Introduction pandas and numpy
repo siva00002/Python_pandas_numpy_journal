@@ -1,0 +1,15 @@
+#To use the NumPy library import as
+import numpy as np
+
+#we'll learn how to create a 1D ndarray by directly converting a list to an ndarray using the numpy.array() constructor. 
+a=[5, 10, 15, 20]
+data_array=np.array(a)
+
+#In standard Python, we might use a lists of lists to represent datasets. While this works for small datasets, it's not ideal for larger ones.
+#Consider an example with two columns of data, where each row has two numbers to be added. In standard Python, we could store the data using a list of lists 
+#structure and employ a for loop to iterate over it, extract the two values, sum them, and append the result to a new list called sums:
+#During each iteration, Python converts our code into bytecode, which instructs our computer's processor to add the numbers:
+#For our example, the computer would need eight processor cycles to process the eight rows of data.
+#The NumPy library, on the other hand, leverages a processor feature called Single Instruction Multiple Data (SIMD) for faster data processing.
+#SIMD enables a processor to execute the same operation on multiple data points in a single cycle:
+

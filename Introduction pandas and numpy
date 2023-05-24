@@ -13,3 +13,6 @@ data_array=np.array(a)
 #The NumPy library, on the other hand, leverages a processor feature called Single Instruction Multiple Data (SIMD) for faster data processing.
 #SIMD enables a processor to execute the same operation on multiple data points in a single cycle:
 
+#Consequently, NumPy requires only two processor cycles — four times faster than standard Python. 
+#This technique of replacing for loops with simultaneous operations on multiple data points is called vectorization, made possible by ndarrays.
+
